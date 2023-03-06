@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { UpdateStudentComponent } from './update-student/update-student.component';
 import { RouterModule } from '@angular/router';
 import { StudentDetailsComponent } from './student-details/student-details.component';
+import { RegisterStudentComponent } from './register-student/register-student.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { StudentDetailsComponent } from './student-details/student-details.compo
     AddStudentComponent,
     StudentListComponent,
     UpdateStudentComponent,
-    StudentDetailsComponent
+    StudentDetailsComponent,
+    RegisterStudentComponent
   ],
   imports: [
     BrowserModule,

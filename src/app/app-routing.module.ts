@@ -1,3 +1,4 @@
+import { RegisterStudentComponent } from './register-student/register-student.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import { UpdateStudentComponent } from './update-student/update-student.component';
 
@@ -9,7 +10,8 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {path:"students",component:StudentListComponent},
   {path:"create-student",component:AddStudentComponent},
-  {path:'',redirectTo:'students',pathMatch:'full'},
+  {path:'',redirectTo:'register',pathMatch:'full'},
+  {path:'register',component:RegisterStudentComponent},
   {path:'update-student/:id',component:UpdateStudentComponent},
   {path:'student-details/:id',component:StudentDetailsComponent}
 ];

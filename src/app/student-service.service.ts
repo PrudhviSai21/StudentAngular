@@ -11,6 +11,10 @@ export class StudentServiceService {
 
   constructor(private http:HttpClient) { }
 
+  registerStudent(student:object):Observable<any>{
+    return this.http.post(`${this.url}`+'register',student);
+  }
+
   getStudentList():Observable<any>{
     return this.http.get(`${this.url}`+'students');
   }
@@ -30,5 +34,7 @@ export class StudentServiceService {
   updateStudent(id:number,value:any):Observable<Object>{
     return this.http.put(`${this.url}updateStudent/${id}`,value);
   }
+
+
 
 }

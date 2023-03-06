@@ -22,7 +22,19 @@
       <label>Age</label>
       <input type="number" class ="form-control" id = "age"
           [(ngModel)] = "student!.age" name = "age">
-  </div>
+    </div>
+
+    <div class="form-group">
+      <label>Gender</label>
+      <input type="text" class ="form-control" id = "gender"
+          [(ngModel)] = "student!.gender" name = "gender">
+    </div>
+
+    <div class="form-group">
+      <label>Date</label>
+      <input type="date" class ="form-control" id = "date"
+          [(ngModel)] = "student!.date" name = "date">
+    </div>
 
       <button class = "btn btn-success" type ="submit">Submit</button>
 

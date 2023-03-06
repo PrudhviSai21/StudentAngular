@@ -21,12 +21,12 @@ export class AddStudentComponent implements OnInit{
     this.studentservice.createStudent(this.student).
     subscribe(data=>{
       console.log(data);
-      this.goToEmployeeList();
+      this.goToStudentList();
     },
     error=>console.log(error));
   }
 
-  goToEmployeeList(){
+  goToStudentList(){
     this.router.navigate(['/students']);
   }
 
